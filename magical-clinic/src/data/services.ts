@@ -1,3 +1,6 @@
+import adrianaPhoto from '../assets/team/adriana-lukomska.jpg'
+import rafalPhoto from '../assets/team/rafal-berner.jpg'
+
 export interface Service {
   name: string
   description: string
@@ -424,11 +427,13 @@ export interface TeamMember {
   name: string
   title: string
   bio: string[]
+  photo: string
 }
 
 export const teamMembers: TeamMember[] = [
   {
     name: 'Adriana Łukomska',
+    photo: adrianaPhoto,
     title: 'Ekspertka Zarządzania Kliniką i Kosmetologii Estetycznej',
     bio: [
       'Adriana Łukomska to niezastąpiona specjalistka w zarządzaniu Kliniką, zapewniająca najwyższy standard obsługi pacjentów oraz wyjątkowe umiejętności w zakresie zaawansowanej kosmetologii estetycznej.',
@@ -442,6 +447,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: 'Dr Rafał Berner',
+    photo: rafalPhoto,
     title: 'Ekspert w Medycynie Estetycznej i Modelowaniu Sylwetki',
     bio: [
       'Dr Rafał Berner to ceniony lekarz medycyny estetycznej, specjalizujący się w zabiegach estetycznych oraz modelowaniu sylwetki zarówno u kobiet, jak i u mężczyzn.',

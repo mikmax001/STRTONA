@@ -2,20 +2,10 @@ import { Link } from 'react-router-dom'
 import SectionHeading from '../components/SectionHeading'
 import { teamMembers } from '../data/services'
 
-function initials(name: string) {
-  return name
-    .replace(/^Dr\.?\s+/i, '')
-    .split(' ')
-    .map((part) => part[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase()
-}
-
 export default function Team() {
   return (
     <div className="bg-ink py-24">
-      <div className="mx-auto max-w-4xl px-6 lg:px-10">
+      <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <SectionHeading
           eyebrow="Nasz zespół"
           title="Ludzie, którym możesz zaufać"
@@ -23,20 +13,28 @@ export default function Team() {
         />
 
         <div className="mt-14 space-y-10">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, i) => (
             <div
               key={member.name}
-              className="flex flex-col gap-6 rounded-lg border border-gold/15 bg-onyx p-8 sm:flex-row"
+              className={`flex flex-col gap-8 rounded-lg border border-gold/15 bg-onyx p-8 sm:items-start ${
+                i % 2 === 1 ? 'sm:flex-row-reverse' : 'sm:flex-row'
+              }`}
             >
-              <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-gold/50 font-display text-2xl text-gold sm:mx-0">
-                {initials(member.name)}
+              <div className="mx-auto w-48 shrink-0 sm:mx-0">
+                <div className="overflow-hidden rounded-lg border-2 border-gold/60 shadow-[0_0_30px_rgba(201,162,75,0.15)]">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="aspect-[3/4] w-full object-cover"
+                  />
+                </div>
               </div>
               <div>
                 <h3 className="font-display text-2xl text-gold-light">{member.name}</h3>
                 <p className="mt-1 text-sm uppercase tracking-wide text-gold/80">{member.title}</p>
                 <div className="mt-4 space-y-3 text-left">
-                  {member.bio.map((paragraph, i) => (
-                    <p key={i} className="text-sm text-cream/70 sm:text-base">
+                  {member.bio.map((paragraph, idx) => (
+                    <p key={idx} className="text-sm text-cream/70 sm:text-base">
                       {paragraph}
                     </p>
                   ))}
