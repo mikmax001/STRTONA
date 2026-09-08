@@ -420,6 +420,48 @@ export const serviceCategories: ServiceCategory[] = [
   },
 ]
 
+export interface TeamMember {
+  name: string
+  title: string
+  bio: string[]
+}
+
+export const teamMembers: TeamMember[] = [
+  {
+    name: 'Adriana Łukomska',
+    title: 'Ekspertka Zarządzania Kliniką i Kosmetologii Estetycznej',
+    bio: [
+      'Adriana Łukomska to niezastąpiona specjalistka w zarządzaniu Kliniką, zapewniająca najwyższy standard obsługi pacjentów oraz wyjątkowe umiejętności w zakresie zaawansowanej kosmetologii estetycznej.',
+      'Jej wszechstronna wiedza i doświadczenie sprawiają, że Klinika działa sprawnie i profesjonalnie, a pacjenci mogą liczyć na pełne wsparcie i komfort.',
+      'Dzięki swojemu zaangażowaniu i pasji do kosmetologii estetycznej, Adriana Łukomska wykonuje szereg zaawansowanych zabiegów, które poprawiają wygląd i samopoczucie pacjentów.',
+      'Jej precyzja i dbałość o każdy detal gwarantują satysfakcję i naturalne efekty.',
+      'Stale doskonali swoje umiejętności, uczestnicząc w licznych szkoleniach i konferencjach branżowych.',
+      'Adriana Łukomska z troską i profesjonalizmem podchodzi do każdego pacjenta, zapewniając indywidualne podejście i najwyższą jakość usług.',
+      'Jej umiejętności w zakresie zarządzania oraz kosmetologii estetycznej sprawiają, że Klinika jest miejscem, gdzie każdy pacjent czuje się wyjątkowo i bezpiecznie.',
+    ],
+  },
+  {
+    name: 'Dr Rafał Berner',
+    title: 'Ekspert w Medycynie Estetycznej i Modelowaniu Sylwetki',
+    bio: [
+      'Dr Rafał Berner to ceniony lekarz medycyny estetycznej, specjalizujący się w zabiegach estetycznych oraz modelowaniu sylwetki zarówno u kobiet, jak i u mężczyzn.',
+      'Jego zaawansowane umiejętności i wszechstronna wiedza czynią go jednym z liderów w tej dziedzinie.',
+      'Dr Berner jest absolwentem Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi, gdzie w 2019 roku ukończył studia doktoranckie.',
+      'Jest aktywnym członkiem wielu prestiżowych organizacji, takich jak Polskie Towarzystwo Medycyny Estetycznej i Anti-Aging, Międzynarodowe Stowarzyszenie Trychologii Klinicznej i Estetycznej ICATA oraz International Federation for Adipose Therapeutics and Science (IFATS) — największego światowego towarzystwa naukowego zajmującego się wykorzystaniem tłuszczowych komórek macierzystych w medycynie regeneracyjnej.',
+      'W ramach Centrum Szkoleniowego OLLIE dr Berner prowadzi zaawansowane szkolenia dla lekarzy z zakresu medycyny estetycznej.',
+      'Specjalizuje się w takich procedurach jak liposukcja z przeszczepem tkanki tłuszczowej do twarzy, piersi i pośladków, urologia estetyczna, skleroterapia, modelowanie twarzy (wolumetria i nici) oraz medycyna regeneracyjna.',
+      'Jego kursy cieszą się ogromnym uznaniem, a wiedza przekazywana przez niego jest nieoceniona dla uczestników.',
+      'Dr Berner od lat rozwija swoje zainteresowania zawodowe w zakresie procedur medycznych z wykorzystaniem autologicznej tkanki tłuszczowej w medycynie estetycznej, regeneracyjnej i onkologii naprawczej.',
+      'Jego zaangażowanie i pasja do medycyny regeneracyjnej sprawiają, że jest liderem w tej dziedzinie, a jego pacjenci mogą liczyć na najnowocześniejsze i najskuteczniejsze metody leczenia.',
+      'W Klinice dr Rafał Berner wykonuje szeroki zakres zabiegów medycyny estetycznej, w tym działania przeciwstarzeniowe, nieoperacyjny lifting twarzy, ginekologię i urologię estetyczną oraz modelowanie sylwetki.',
+      'Pacjenci doceniają go za profesjonalizm, precyzję oraz indywidualne podejście do każdego przypadku.',
+      'Jego doświadczenie w zakresie klasycznych procedur estetycznych, takich jak stosowanie kwasu hialuronowego, toksyny botulinowej, nici i stymulatorów tkankowych, w połączeniu z zaawansowanymi technikami z wykorzystaniem tkanki tłuszczowej, gwarantuje satysfakcjonujące efekty.',
+      'Dr Berner podkreśla, że tkanka tłuszczowa to najbardziej naturalny i bezpieczny wypełniacz, a także nieocenione źródło komórek macierzystych, które przyczyniają się do regeneracji i pięknego wyglądu.',
+      'Dzięki jego umiejętnościom i podejściu pacjenci mogą cieszyć się naturalnymi, harmonijnymi efektami zabiegów.',
+    ],
+  },
+]
+
 export const clinicInfo = {
   name: 'Magical Clinic',
   slogan: 'Piękno i Zaufanie',
