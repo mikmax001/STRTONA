@@ -1,32 +1,58 @@
-# React + TypeScript + Vite
+# Magical Clinic — strona internetowa
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Strona magicalclinic.pl zbudowana w Vite + React + TypeScript + Tailwind CSS. Wdrażana automatycznie
+na Vercel po każdym pushu do gałęzi `main` na GitHubie.
 
-Currently, two official plugins are available:
+## Jak uruchomić stronę lokalnie
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Wymagany [Node.js](https://nodejs.org) (LTS).
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+cd magical-clinic
+npm install       # tylko za pierwszym razem / po zmianie zależności
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Otwórz **http://localhost:5173** w przeglądarce. Zmiany w plikach `.tsx`/`.ts`/`.css` odświeżają się
+automatycznie (hot reload) — nie trzeba restartować serwera.
+
+## Gdzie edytować treść
+
+| Co chcesz zmienić | Plik |
+| --- | --- |
+| Teksty, zabiegi, ceny, dane kontaktowe, opinie | `src/data/services.ts` |
+| Kolory, fonty | `src/index.css` |
+| Menu górne | `src/components/Navbar.tsx` |
+| Stopka | `src/components/Footer.tsx` |
+| Strona główna | `src/pages/Home.tsx` |
+| O nas | `src/pages/About.tsx` |
+| Oferta (katalog zabiegów) | `src/pages/Offer.tsx` |
+| Cennik | `src/pages/Pricing.tsx` |
+| Nasz zespół | `src/pages/Team.tsx` |
+| Kontakt | `src/pages/Contact.tsx` |
+
+## Jak wprowadzić zmianę i wysłać ją na żywą stronę
+
+1. Edytuj pliki, sprawdź efekt na `npm run dev`
+2. Upewnij się, że build przechodzi bez błędów: `npm run build`
+3. Wypchnij zmiany na GitHub:
+
+   ```bash
+   git add -A
+   git commit -m "Opis zmiany"
+   git push origin main
+   ```
+
+4. Vercel automatycznie wykrywa push, buduje i wdraża nową wersję — zwykle w ciągu ~1 minuty,
+   bez żadnej dodatkowej akcji. Po chwili zmiana jest widoczna na **magicalclinic.pl**.
+
+## Zrzuty ekranu (Playwright)
+
+Do szybkiego podglądu wszystkich podstron bez otwierania przeglądarki:
+
+```bash
+npm run screenshot
+```
+
+Zapisuje pliki PNG do folderu `screenshots/` (wymaga uruchomionego `npm run dev` w tle oraz
+zainstalowanego Playwrighta: `npx playwright install chromium`).

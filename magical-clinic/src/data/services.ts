@@ -421,6 +421,199 @@ export const serviceCategories: ServiceCategory[] = [
       },
     ],
   },
+  {
+    id: 'ginekologia-estetyczna',
+    title: 'Ginekologia estetyczna',
+    intro:
+      'Zabiegi laserowe i iniekcyjne poprawiające komfort, zdrowie i estetykę stref intymnych kobiet.',
+    services: [
+      {
+        name: 'Rewitalizacja pochwy',
+        description:
+          'Zabieg wykonywany laserem Erbowo-Yagowym, przeznaczonym do pracy z najdelikatniejszymi partiami ciała. Polega na ogrzaniu tkanki i zawartego w niej kolagenu, który kurczy się i przebudowuje.',
+        details: [
+          'Efekty: zwiększenie napięcia i elastyczności pochwy, znaczna poprawa jędrności oraz wzrost satysfakcji seksualnej',
+          'Przebieg: do pochwy wprowadzana jest dedykowana głowica, przez którą wiązka lasera naświetla błonę śluzową oraz okolicę przedsionka pochwy',
+          'Wskazania: spadek napięcia i rozluźnienie pochwy spowodowane porodami lub procesem starzenia się',
+          'Zabiegi wykonywane są w pierwszej połowie cyklu, po menstruacji. Zabieg bezbolesny i bezpieczny, nie wymaga dodatkowych procedur przedzabiegowych',
+          'Przeciwwskazania: ciąża, karmienie piersią, choroba nowotworowa, infekcja pochwy, nieprawidłowy wynik cytologii, padaczka, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '1500–2500 zł',
+      },
+      {
+        name: 'Leczenie nietrzymania moczu',
+        description:
+          'Laseroterapia polegająca na fototermicznym, nieablacyjnym obkurczeniu pochwy laserem Er:YAG z dedykowaną głowicą, wzmacniającym obszar ujścia cewki moczowej, ścianek pochwy oraz powięzi wewnątrzmiednicznej.',
+        details: [
+          'Efekty: obkurczenie tkanek, zmniejszenie kąta nachylenia cewki moczowej i przywrócenie jej normalnej funkcjonalności',
+          'Wskazania: nietrzymanie moczu podczas kichnięcia czy kaszlu, po naturalnym porodzie lub po menopauzie, osłabienie mięśni dna miednicy (mięśni Kegla)',
+          'Metoda bezbolesna i mało inwazyjna, nie wymaga znieczulenia',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, padaczka, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '1800–3000 zł',
+      },
+      {
+        name: 'Orgasm Shot (O-shot)',
+        description:
+          'Nowoczesny zabieg dla kobiet z wykorzystaniem osocza bogatopłytkowego pozyskanego z krwi własnej pacjentki, wstrzykiwanego w okolice łechtaczki i przednią ścianę pochwy.',
+        details: [
+          'Wskazania: problemy z osiągnięciem orgazmu, ból podczas współżycia, zaburzenia libido',
+          'Pomaga w osiągnięciu orgazmu pochwowego, a także łechtaczkowego',
+          'Zalety: brak ryzyka immunologicznego, powikłań czy uczuleń, wysoka skuteczność i bezpieczeństwo, zabieg bez skalpela, brak okresu rekonwalescencji',
+          'Zabieg wykonywany w znieczuleniu, trwa około 60 minut — po nim pacjentka wraca do codziennych czynności',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '1500–2500 zł',
+      },
+      {
+        name: 'Powiększenie punktu G',
+        description:
+          'Zabieg wykonywany preparatem kwasu hialuronowego przeznaczonego do wypełnienia okolic intymnych. Wysokie stężenie i lepkość preparatu pozwalają osiągnąć trwały efekt objętościowy.',
+        details: [
+          'Efekty: poprawa jakości życia intymnego, zwiększenie intensywności doznań podczas stosunku',
+          'Wskazania: brak satysfakcji ze stosunku, problem z osiągnięciem orgazmu, zmniejszenie punktu G wraz z upływem czasu',
+          'Zabieg bezbolesny, nie wymaga okresu rekonwalescencji',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '1200–2000 zł',
+      },
+      {
+        name: 'Modelowanie warg sromowych',
+        description:
+          'Zabieg wykonywany preparatem kwasu hialuronowego przeznaczonego do okolic intymnych, umożliwiającym korekcję lipoatrofii oraz wypełnienie tkanek.',
+        details: [
+          'Wskazania: wiotka i sucha skóra łechtaczki oraz warg sromowych, częste urazy i otarcia, ból w okolicy sromu, uporczywy świąd okolic intymnych',
+          'Wskazania c.d.: utrata satysfakcji z pożycia seksualnego, oznaki starzenia się okolic intymnych, plastyka i korekta tkanek, korekta asymetrii, lipoatrofia',
+          'Dyskomfort przy jeździe konnej, rowerze, fitnessie i codziennych czynnościach',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '1500–2500 zł',
+      },
+      {
+        name: 'Nawilżanie stref intymnych (PRP i PRF)',
+        description:
+          'Rewitalizacja pochwy osoczem bogatopłytkowym i fibryną bogatopłytkową — wzmacnia efekt laserowego obkurczania pochwy i laserowego leczenia nietrzymania moczu.',
+        details: [
+          'Wskazania: suchość pochwy powodująca dyskomfort podczas aktywności seksualnej, wiotka i sucha skóra okolic intymnych, uszkodzenia pochwy po stanach zapalnych lub zabiegach chirurgicznych',
+          'Działanie: naturalne wzmocnienie tkanek, przyspieszenie regeneracji, przywrócenie prawidłowego ukrwienia, nawilżenia i napięcia',
+          'Zalecane 2–3 zabiegi w miesięcznych odstępach; plan ustalany indywidualnie z lekarzem',
+          'Przy laserowym obkurczaniu pochwy: pierwszy zabieg PRP 7 dni przed laseroterapią, drugi w dniu laseroterapii, trzeci 7–10 dni później',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '800–1500 zł',
+      },
+      {
+        name: 'Usuwanie blizn poporodowych — laser',
+        description:
+          'Zabieg przeprowadzany z użyciem lasera z głowicą Er:YAG. Energia urządzenia redukuje blizny poprzez precyzyjne, stopniowe odparowanie tkanki narosłej w miejscu blizny, bez naruszania zdrowej skóry.',
+        details: [
+          'Efekty: blizna staje się mniej wypukła i coraz mniej wyróżnia się na tle zdrowej skóry',
+          'Skuteczna i mało inwazyjna metoda — podczas każdego z serii zabiegów usuwane jest możliwie najwięcej warstw tkanki bliznowatej',
+          'Normalną reakcją jest miejscowe krwawienie lub wysięk, które stopniowo ustępują',
+          'Przeciwwskazania: ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '600–1200 zł',
+      },
+      {
+        name: 'Wybielanie stref intymnych — laser',
+        description:
+          'Zabieg laserowy rozjaśniający okolice intymne, których ciemniejszy kolor związany jest z nadmiernym nagromadzeniem melaniny w skórze. Dodatkowo ujędrnia i nawilża tkanki.',
+        details: [
+          'Działanie: światło lasera działa bezpośrednio na melaninę, uszkadzając ją, oraz biostymulująco na melanocyty, normując produkcję barwnika',
+          'Efekty widoczne po około dwóch tygodniach',
+          'Procedura w znieczuleniu miejscowym, trwa kilkanaście minut, wykonuje ją lekarz',
+          'Podstawą do wykonania zabiegu jest posiadanie aktualnych wyników cytologii',
+          'Przez kilka dni po wizycie możliwy lekki dyskomfort — pieczenie, zaczerwienienie i obrzęk',
+          'Przeciwwskazania: infekcje pochwy, ciąża, połóg, karmienie piersią, choroba nowotworowa, nieprawidłowy wynik cytologii, padaczka, choroby autoimmunologiczne, nieuregulowana cukrzyca',
+        ],
+        priceExample: '800–1500 zł',
+      },
+    ],
+  },
+  {
+    id: 'urologia-estetyczna',
+    title: 'Urologia estetyczna',
+    intro:
+      'Zabiegi poprawiające estetykę, komfort i jakość życia intymnego mężczyzn, wykonywane przez lekarza medycyny estetycznej.',
+    services: [
+      {
+        name: 'Powiększanie penisa kwasem hialuronowym',
+        description:
+          'Mało inwazyjna alternatywa dla zabiegów chirurgicznych, pozwalająca na realne zwiększenie rozmiarów prącia. Zabieg bezbolesny i bezpieczny, bez ryzyka powikłań chirurgicznych.',
+        details: [
+          'Efekty: zwiększenie długości średnio o 2–4 cm oraz pogrubienie o 3–5 cm — efekt zależy od pierwotnej wielkości penisa',
+          'Efekty natychmiastowe i w pełni przewidywalne, utrzymują się od jednego do dwóch lat; zalecane powtórzenie po ok. 9 miesiącach',
+          'Przebieg: znieczulenie miejscowe, zabieg trwa około 40 minut, preparat wprowadzany pod skórę specjalną igłą',
+          'Po zabiegu możliwe niewielkie zasinienia, zaczerwienienie, obrzęk lub swędzenie; brak blizn pozabiegowych',
+          'Zalecana rezygnacja z aktywności seksualnej i intensywnego wysiłku fizycznego do 4 tygodni',
+          'Przeciwwskazania: choroby zapalne i nowotworowe układu moczowo-płciowego, choroby przewlekłe tkanki łącznej i układu krzepnięcia, niektóre leki, zmiany zapalne i ropne w pachwinach, stulejka, uczulenie na preparat, problemy z potencją',
+        ],
+        priceExample: '4000–7000 zł',
+      },
+      {
+        name: 'Powiększanie penisa własnym tłuszczem',
+        description:
+          'Zabieg mający na celu zwiększenie rozmiaru penisa w dwóch wymiarach — wydłużenie i pogrubienie — z wykorzystaniem tkanki tłuszczowej pacjenta wzbogaconej osoczem bogatopłytkowym i komórkami macierzystymi.',
+        details: [
+          'Przebieg: tłuszcz pobierany zwykle z okolicy brzucha, wzbogacany PRP oraz komórkami macierzystymi, dzięki czemu przyjmuje się znacznie więcej przeszczepionej tkanki',
+          'Komórki macierzyste dogłębnie rewitalizują ciało jamiste i gąbczaste prącia — w okresie do 3 miesięcy zwiększa się skuteczność wzwodów',
+          'Przeszczepiony tłuszcz wchłania się częściowo do ok. 6 tygodni, pozostaje około 60% przeszczepionej ilości; zabieg można powtórzyć',
+          'Znieczulenie miejscowe, zabieg nie pozostawia blizn',
+          'Po zabiegu powrót do codziennych czynności od razu; zalecana abstynencja seksualna 3–4 tygodnie',
+          'Dla optycznego uwydatnienia zalecane zabiegi dodatkowe: liposukcja wzgórka łonowego lub podbrzusza',
+        ],
+        priceExample: '6000–10 000 zł',
+      },
+      {
+        name: 'Powiększanie penisa kwasem polimlekowym (Lenisna)',
+        description:
+          'LENISNA to wypełniacz hybrydowy łączący natychmiastowy efekt wypełnienia kwasem hialuronowym (HA) z długotrwałą stymulacją produkcji kolagenu dzięki kwasowi polimlekowemu (PDLLA).',
+        details: [
+          'Efekt widoczny od razu po zabiegu; wypełnienie utrzymuje się do momentu, gdy zaczyna dominować produkcja nowego kolagenu i elastyny',
+          'Cechy: jedyna na świecie formuła hybrydy Poly D,L Lactyd + HA o wielkości cząsteczek 50–60 mikrometrów, skuteczność potwierdzona badaniami klinicznymi, certyfikaty FDA i CE',
+          'Wskazania: niezadowolenie z grubości i obwodu prącia, brak satysfakcji seksualnej partnerki',
+          'Przebieg: znieczulenie miejscowe, zabieg trwa około 40 minut',
+          'Zalecana rezygnacja z aktywności seksualnej i intensywnego wysiłku fizycznego do 3–4 tygodni',
+          'Przeciwwskazania: choroby zapalne i nowotworowe układu moczowo-płciowego, choroby przewlekłe tkanki łącznej i układu krzepnięcia, niektóre leki, zmiany zapalne i ropne w pachwinach, stulejka, uczulenie na preparat, problemy z potencją',
+        ],
+        priceExample: '5000–8000 zł',
+      },
+      {
+        name: 'Scrotoks — relaksacja moszny',
+        description:
+          'Podanie toksyny botulinowej w skórę moszny w celu zrelaksowania jej mięśni. Pomaga przy przypadłościach bólowych w rejonach krocza, a także odmładza skórę i przywraca jej jędrność.',
+        details: [
+          'Efekty: rozluźnienie i wygładzenie skóry moszny, powiększenie i wydłużenie moszny, niższe zawieszenie jąder, większa mobilność jąder, zmniejszenie potliwości, nowe doznania podczas stosunku',
+          'Wskazania: wiotka, pomarszczona skóra moszny, nawracające stany zapalne, dolegliwości bólowe (także mimo leczenia operacyjnego), zwiększona potliwość skóry w okolicy krocza, ograniczone doznania w trakcie stosunku',
+          'Sprawdza się przy schorzeniach mięśni moszny, gdy leczenie chirurgiczne nie przynosi rezultatów, np. przy żylakach powrózka nasiennego',
+          'Zabieg małoinwazyjny, nie wymaga okresu rekonwalescencji',
+          'Przeciwwskazania: opryszczka w miejscu wykonywania zabiegu, przeciwwskazania wskazane przez lekarza',
+        ],
+        priceExample: '1500–2500 zł',
+      },
+      {
+        name: 'P-shot — wzmocnienie doznań',
+        description:
+          'Zabieg wzmagający erekcję oraz wspierający leczenie przedwczesnego wytrysku. Pobrane od pacjenta osocze bogatopłytkowe wstrzykiwane jest do ciał jamistych i okolicy główki penisa.',
+        details: [
+          'Zabieg w znieczuleniu miejscowym',
+          'Nie jest wymagane wcześniejsze przygotowanie pacjenta',
+        ],
+        priceExample: '1500–2500 zł',
+      },
+      {
+        name: 'Rewitalizacja skóry miejsc intymnych',
+        description:
+          'Zabieg oparty na wysokiej koncentracji płytek krwi, które uwalniają w miejscu podania liczne czynniki wzrostu, doprowadzając do intensywnej reakcji regeneracji tkanek.',
+        details: [
+          'Efekty: poprawa stanu skóry — odzyskuje młody, zdrowy wygląd',
+          'Skóra staje się bardziej napięta, jędrna, odżywiona i nawilżona',
+          'Wyrównanie kolorytu skóry oraz jej przebudowa',
+        ],
+        priceExample: '800–1500 zł',
+      },
+    ],
+  },
 ]
 
 export interface TeamMember {

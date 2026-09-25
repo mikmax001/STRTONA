@@ -45,6 +45,20 @@ export default function Offer() {
                   animate={{ height: isOpen ? 'auto' : 0 }}
                   className="overflow-hidden"
                 >
+                  {category.services.length === 0 ? (
+                    <div className="border-t border-gold/10 p-6 text-center">
+                      <p className="text-sm text-cream/60">
+                        Szczegółowa lista zabiegów w tej kategorii ustalana jest indywidualnie —
+                        zapytaj podczas konsultacji.
+                      </p>
+                      <Link
+                        to="/kontakt"
+                        className="mt-4 inline-block rounded-full border border-gold/40 px-5 py-2 text-xs uppercase tracking-wide text-gold-light transition-colors hover:bg-gold/10"
+                      >
+                        Zapytaj o ofertę
+                      </Link>
+                    </div>
+                  ) : (
                   <div className="grid gap-3 border-t border-gold/10 p-6 sm:grid-cols-2">
                     {category.services.map((service) => {
                       const key = `${category.id}-${service.name}`
@@ -76,6 +90,7 @@ export default function Offer() {
                       )
                     })}
                   </div>
+                  )}
                 </motion.div>
               </div>
             )
